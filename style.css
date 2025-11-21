@@ -1,0 +1,150 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 350px;
+            background-color: #1a2849;
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .photo-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 0;
+            object-fit: cover;
+            background-color: #ccc;
+        }
+
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
+
+        .sidebar-section h2 {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90e2;
+            letter-spacing: 1px;
+        }
+
+        .sidebar-section p,
+        .sidebar-section ul {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        .sidebar-section ul {
+            list-style: none;
+        }
+
+        .sidebar-section ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .sidebar-section ul li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+        }
+
+        .sidebar a {
+            color: #a3cfff;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #4a90e2;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 15px;
+        }
+
+        .skills-grid ul {
+            margin: 0;
+        }
+
+        .item-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #003a7d;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 60px 50px;
+        }
+
+        .main-content h1 {
+            font-size: 42px;
+            color: #1a2849;
+            margin-bottom: 10px;
+        }
+
+        .main-content .subtitle {
+            font-size: 20px;
+            color: #4a90e2;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .main-content {
+                padding: 40px 30px;
+            }
+        }
